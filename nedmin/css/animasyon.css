@@ -1,0 +1,18 @@
+div.update{
+	transition: .5s;
+}
+
+div.update:hover {
+	
+	transition: .5s;
+	transform: rotate(360deg);
+}
+
+div.delete{
+	transition: .5s;
+}
+
+div.delete:hover{
+	transition: .5s;
+	transform: rotate(360deg);
+}

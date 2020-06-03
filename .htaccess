@@ -1,0 +1,13 @@
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+RewriteRule ^poliklinikler/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+) polyclinics-details.php?polyclinics_slug=1&polyclinics_id=$2 [L,QSA]
+
+#RewriteRule ^poliklinikler/([0-9a-zA-Z-_]) polyclinics-details.php?polyclinics_id=$2 [L,QSA]
+
+RewriteRule ^doktorlar/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+) doctors-details.php?doctors_slug=1&doctors_id=$2 [L,QSA]
